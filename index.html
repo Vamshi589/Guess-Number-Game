@@ -1,1 +1,36 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Guess Number</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(54, 49, 49);
+        }
+        .container{
+    position: absolute;
+    top: 10%;
+    left: 28%;
+    background-color: antiquewhite;
+    padding: 44px;
+    border-radius: 5px;  
+}
+    </style>
+    <div class="container">
+<form onsubmit="guessedNumber (event)">
+<input type="number" id="guessFeild">
+<input type="submit" value="Submit" id="btn">
+</form>
+<div>
+<p>Your Guessed Numbers: <span id="guessedNumber"></span></p>
+<p>Remaining Chances: <span id="remainingChancesValue" >10</span></p>
+<p id="guessMsg"></p>
+<h1 id="success"> </h1>
+</div>
+</div>
+</body>
+<script src="./script.js"></script> 
+</html>
